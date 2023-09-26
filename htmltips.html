@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+        <h1>TIPS HTML</h1>
+    </center>
+    <div>
+        <details>
+            <summary>
+                1. Atributo 'Loading=Lazy'
+            </summary>
+            <p>
+                Este atributo sirve para poder diferir la carga de
+                la imagen hasta que el usuario se desplace hacia ella<br>
+
+                <img src='https://www.bambu-mobile.com/wp-content/uploads/2022/06/Lenguajes-de-programacion-del-futuro-programacion-lenguajes-de-programacion-python-JS-C-Java-scaled.jpg'
+                    width="70" height="70" loading="lazy" alt='Alternative Text'>
+
+            </p>
+        </details>
+    </div>
+    <div>
+        <details>
+            <summary>
+                2. Enlaces de correo electrónico, llamadas y SMS
+            </summary>
+            <p>
+                Como el nombre indica esto sirve para poder meter el
+                email (mailto), el teléfono(tel) o a que número
+                recibiremos los SMS (sms). <br>
+
+                <a href="mailto:correo@gmail.com">
+                    Contacta con nosotros por email
+                </a> <br>
+
+                <a href="tel:666555444">
+                    Llámanos
+                </a><br>
+
+                <a href="sms:666555444">
+                    Envía un mensaje
+                </a>
+
+            </p>
+        </details>
+    </div>
+    <div>
+        <details>
+            <summary>
+                3. Listas ordenadas del atributo 'inicio'
+            </summary>
+            <p>
+                Este atributo lo podemos utilizar para cambiar
+                el punto de partida de sus listas ordenadas.
+                Es decir, podríamos querer que la lista empezara
+                en el número 11, con esto podemos hacerlo de una
+                forma muy fácil, tendríamos que poner <b>"ol start="11""</b><br>
+
+            <ol start="11">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>Go</li>
+            </ol>
+            </p>
+
+        </details>
+    </div>
+    <div>
+        <details>
+            <summary>
+                4. El elemento 'metro'
+            </summary>
+            <p>
+                Podemos utilizar este elemento para mostrar
+                cantidades. <b>No se necesita JavaScript/CSS.</b><br>
+                <br><label for="value1">Bajo</label>
+                <meter id="value1" min="0" max="100" low="30" high="75" optimum="80" value="25"></meter>
+
+                <label for="value2">Medio</label>
+                <meter id="value2" min="0" max="100" low="30" high="75" optimum="80" value="50"></meter>
+
+                <label for="value3">Alto</label>
+                <meter id="value3" min="0" max="100" low="30" high="75" optimum="80" value="80"></meter>
+            </p> <br>
+
+        </details>
+    </div>
+    <div>
+        <details>
+            <summary>
+                5. Búsqueda nativa HTML
+            </summary>
+            <p>
+                Con este atributo nos saldrá un desplegable en el cual poder elegir
+                la opción que queramos o directamente podemos buscarla escribiéndola
+                en el recuadro que nos aparecerá en pantalla.<br>
+            <h1>
+                Tipo de trabajo a desempeñar:
+            </h1>
+
+            <input list="items">
+
+            <datalist id="items">
+                <option value="Desarrollador Web">
+                <option value="Desarrollador Multiplataforma">
+                <option value="Analista">
+                <option value="Técnico ayudante">
+                <option value="Jefe">
+            </datalist>
+            </p>
+        </details>
+    </div>
+    <div>
+        <details>
+            <summary>
+                6. Elemento de conjunto de campos
+            </summary>
+            <p>
+                El elemento "fieldset" se puede utilizar para agrupar varios controles
+                asi como etiquetas dentro de un formulario web.
+            <form>
+                <fieldset>
+                    <legend>
+                        Elige tu lenguaje favorito
+                    </legend>
+                    <input type="radio" id="JavaScript" name="lenguaje">
+                    <label for="javascript">JavaScript</label><br />
+                    <input type="radio" id="Python" name="lenguaje">
+                    <label for="python">Python</label><br />
+                    <input type="radio" id="Java" name="lenguaje">
+                    <label for="java">Java</label><br />
+                </fieldset>
+            </form>
+            </p>
+        </details>
+    </div>
+    <div>
+        <details>
+            <summary>
+                7. Abridor de ventanas
+            </summary>
+            <p>
+                Este nos servirá para que la página a la que vayamos a acceder se abra en una
+                página nueva y no en la actual.<br>
+                <br>Un ejemplo sería así, que te lleva a la página oficial de Google, en
+                una página nueva:
+
+                <br><a href="https://www.google.es/" target="_blank" rel="noopener">
+                    Google
+                </a>
+            </p>
+
+        </details>
+    </div>
+    <div>
+        <details>
+            <summary>
+                8. Elemento básico
+            </summary>
+            <p>
+                Este elemento especifica la dirección URL base que se utilizará
+                para todas las direcciones URL relativas contenidas dentro
+                de un documento.
+
+                <head>
+                    <base target="_blank">
+                </head>
+            <div class="wrapper">
+                Este link se abrirá en una nueva pestaña &nbsp;
+                <a href="https://www.google.es/"><br>
+                    Google
+                </a>
+
+                <p>
+                    Si necesitas ayuda <br><a href="https://support.google.com/?hl=es">
+                        AYUDA DE GOOGLE
+                    </a>
+                </p>
+                </p>
+        </details>
+    </div>
+    <div>
+        <details>
+            <summary>
+                9. Eliminación de caché de Favicon
+            </summary>
+            <p>
+                Para actualizar el favicon de un sitio web, podemos
+                obligar a los navegadores a descargar una nueva versión
+                agregándola "?v=2" al nombre del archivo.<br>
+                Esto sería el ejemplo del código: <br>
+                "link rel="icon" href="/favicon.ico?v=2"/"
+                <link rel="icon" href="/favicon.ico?v=2" />
+            </p>
+        </details>
+    </div>
+    <div>
+        <details>
+            <summary>
+                10. Corrector Ortográfico
+            </summary>
+            <p>
+                <label for="input1">Corrector Ortrográfico="true"</label>
+                <input type="text" id="input1" spellcheck="true"><br>
+
+                <br><label for="input2">Corrector Ortrográfico="false"</label>
+                <input type="text" id="input2" spellcheck="false">
+            </p>
+        </details>
+    </div>
+    <div>
+        <details>
+            <summary>
+                11. Controles deslizantes HTML nativos
+            </summary>
+            <p>
+                Utilizaremos este atributo para poder crear controles deslizantes.
+                Lo único que se requiere de JavaScript y en es este momento no lo vamos
+                a implementar.
+
+                <br><label for="volume">Volume: </label>
+                <input type="range" id="volume" name="volume" min="0" max="20">
+
+                <label for="result">Your choice: </label>
+                <input type="number" id="result" name="result">
+
+            </p>
+        </details>
+    </div>
+    <div>
+        <details>
+            <summary>
+                12. Acordeón HTML
+            </summary>
+            <p>
+                Podemos utilizar el atributo details para mostrar la información
+                en forma de acordeón, tal y como está el diseño de todos los
+                apartados de esta página web.
+            <details>
+                <summary>
+                    Texto de ejemplo, haz clic en mí
+                </summary>
+                <p>
+                    Aquí sale la información a visualizar
+                </p>
+            </details>
+            </p>
+        </details>
+    </div>
+    <div>
+        <details>
+            <summary>
+                13. Etiqueta 'mark'
+            </summary>
+            <p>
+                Podemos usar esta etiqueta para resaltar texto.<br>
+            <p>No olvides el <mark>BUEN DÍA</mark> que hace hoy.</p>
+            </p>
+        </details>
+    </div>
+    <div>
+        <details>
+            <summary>
+                14. Atributo 'Descargar'
+            </summary>
+            <p>
+                El atributo Download lo podemos utilizar en los enlaces
+                para descargar el archivo en lugar de navegar hasta él<br>
+
+                <a href='programación-subir.jpg' download>
+                    DESCARGAR IMAGEN
+                </a>
+            </p>
+        </details>
+    </div>
+    <div>
+        <details>
+            <summary>
+                15. Tip de rendimiento
+            </summary>
+            <p>
+                Utilizaremos el .webp para reducir el tamaño de las imágenes
+                y mejorar el rendimiento de su sitio web.<br>
+
+                <picture>
+
+                    <source
+                        srcset="https://res.cloudinary.com/cloudinary-marketing/images/w_1540,h_847/f_auto,q_auto/v1649720128/Web_Assets/blog/WebP_2000x1100_v1a/WebP_2000x1100_v1a-jpg?_i=AA"
+                        type="image/webp">
+                    <img src="https://res.cloudinary.com/cloudinary-marketing/images/w_1540,h_847/f_auto,q_auto/v1649720128/Web_Assets/blog/WebP_2000x1100_v1a/WebP_2000x1100_v1a-jpg?_i=AA"
+                        width="70" height="70" alt="logo">
+                </picture>
+            </p>
+        </details>
+    </div>
+    <div>
+        <details>
+            <summary>
+                16. Miniatura del vídeo
+            </summary>
+            <p>
+                Utilizaremos este atributo para especificar una imagen que
+                se mostrará mientras se descarga el vídeo o hasta que el
+                usuario presione el botón de reproducción con un código
+                como este de ejemplo:<br> "video poster="path/to/image""<br>
+
+            </p>
+        </details>
+    </div>
+    <div>
+        <details>
+            <summary>
+                17. Entrada type='search'
+            </summary>
+            <p>
+                Usa el type="search" para tus búsquedas y te generará un
+                botón de limpiar.
+            </p>
+        </details>
+    </div>
+    <div>
+        <details>
+            <summary>
+                18. Etiqueta 'pre'
+            </summary>
+            <p>
+                Se pueda usar esta etiqueta para presentar texto preformateado
+                exactamente como está escrito en el archivo HTML:
+
+                    <h3>
+                        Con etiqueta 'pre'
+                    </h3>
+
+                    <pre>
+                        .center {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;   
+                        }           
+                    </pre>
+
+                    <h3>
+                        Sin etiqueta 'pre'
+                    </h3>
+
+                    <p>
+                        .center {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        }
+
+                    </p>
+            </p>
+        </details>
+    </div>
+</body>
+
+</html>
